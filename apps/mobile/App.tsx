@@ -25,3 +25,4 @@ export default function App(): JSX.Element {
     </SafeAreaProvider>
   );
 }
+console.log("hgfhcgbfcgrfycfvjyhtcbgrcbf");
