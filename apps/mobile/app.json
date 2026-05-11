@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Trading Chart Analyzer",
+    "slug": "trading-chart-analyzer",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "tca",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0B14"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tca.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We use the camera so you can capture a chart screenshot to analyse.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library so you can select a chart screenshot to analyse."
+      }
+    },
+    "android": {
+      "package": "com.tca.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0B14"
+      },
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow Trading Chart Analyzer to access your camera so you can capture a chart screenshot to analyse.",
+          "photosPermission": "Allow Trading Chart Analyzer to access your photo library so you can select a chart screenshot to analyse."
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "Trading Chart Analyzer",
+      "shortName": "TCA",
+      "themeColor": "#0B0B14",
+      "backgroundColor": "#0B0B14"
+    },
+    "extra": {
+      "apiBaseUrl": "http://localhost:3000/api"
+    }
+  }
+}

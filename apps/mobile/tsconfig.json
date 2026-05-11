@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "allowJs": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noUncheckedIndexedAccess": false,
+    "types": [
+      "react",
+      "react-native",
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "index.ts",
+    "App.tsx",
+    "app.config.ts",
+    "nativewind-env.d.ts",
+    "global.d.ts"
+  ]
+}
